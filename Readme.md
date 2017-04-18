@@ -1,5 +1,3 @@
-== README
-
 Este README normalmente documentaria as etapas necessárias para
 Aplicação em funcionamento.
 
