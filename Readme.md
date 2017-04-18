@@ -19,8 +19,5 @@ Coisas que você pode querer cobrir:
 
 * Instruções de implantação
 
--benzóico.
 
-
-Sinta-se à vontade para usar uma linguagem de marcação diferente se você não planeja executar
-<Tt> rake doc: app </ tt>.
+Sinta-se à vontade para usar uma linguagem de marcação diferente se você não planeja executar.
