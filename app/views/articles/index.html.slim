@@ -1,10 +1,10 @@
-h1 Listing articles
+h1 Lista de Artigos
 
 table.table.tabls-striped
   thead
     tr
-      th Title
-      th Published
+      th Título
+      th Publicado
       th
       
 
@@ -12,12 +12,13 @@ table.table.tabls-striped
     - @articles.each do |article|
       tr
         td = article.title
-        td = article.body
-        td = article.published
-        td = link_to 'Show', article
-        td = link_to 'Edit', edit_article_path(article)
-        td = link_to 'Destroy', article, data: { confirm: 'Are you sure?' }, method: :delete
+        td = l article.published, format: :short
+        td
+          .btn-group.pull-right
+            = link_to 'Exibir', article, class: "btn btn-default"
+            = link_to 'Editar', edit_article_path(article), class: "btn btn-default"
+            = link_to 'Excluir', article, data: { confirm: 'Tem certeza?' }, method: :delete, class: "btn btn-default"
 
 br
 
-= link_to 'New Article', new_article_path
+= link_to 'Novo Artigo', new_article_path, class: "btn btn-primary"

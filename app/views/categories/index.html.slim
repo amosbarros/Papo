@@ -1,0 +1,23 @@
+h1 Lista de Categorias
+
+table.table.tabls-striped.table-hover
+  thead
+    tr
+      th Nome
+      th
+      th
+      th
+
+  tbody
+    - @categories.each do |category|
+      tr
+        td = category.name
+        td
+          .btn-group.pull-right
+            = link_to 'Editar', edit_category_path(category), class: 'btn btn-default'
+            '
+            = link_to 'Excluir', category, data: { confirm: 'Tem certeza ?' }, method: :delete, class: 'btn btn-default'
+
+br
+
+= link_to 'Nova Categoria', new_category_path, class: 'btn btn-primary btn-sm'

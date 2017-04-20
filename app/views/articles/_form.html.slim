@@ -2,9 +2,11 @@
   = f.error_notification
 
   .form-inputs
-    = f.input :title
-    = f.input :body
-    = f.input :published
+    = f.input :title, label: 'Título'
+    = f.input :body, label: 'Escrever Artigo'
+    = f.input :published, label: 'Publicado em:'
 
   .form-actions
-    = f.button :submit
+    = f.button :submit, class: "btn btn-primary"
+    '
+    = link_to 'Voltar', articles_path, class: "btn btn-default"
