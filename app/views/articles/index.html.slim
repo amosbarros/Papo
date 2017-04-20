@@ -9,7 +9,7 @@ table.table.tabls-striped
       
 
   tbody
-    - @articles.each do |article|
+    - @articles.order(:published => :desc).each do |article|
       tr
         td = article.title
         td = l article.published, format: :short
