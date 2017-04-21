@@ -2,10 +2,10 @@
   = f.error_notification
 
   .form-inputs
-    = f.input :title, label: 'Título'
-    =f.association :category, prompt: 'Selecione'
-    = f.input :body, label: 'Escrever Artigo'
-    = f.input :published, label: 'Publicado em:'
+    = f.input :title
+    =f.association :category
+    = f.input :body
+    = f.input :published
 
   .form-actions
     = f.button :submit, class: "btn btn-primary"

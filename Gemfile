@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.0'
 gem'simple_form'
 gem 'slim-rails'
 gem 'xray-rails', group: :development
+gem 'pry-rails', group: :development
 gem 'start'
 
 group :development, :test do

@@ -300,7 +300,7 @@ html {
 }
 
 body {
-  margin-top: 120px;
+  margin-top: 80px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.428571429;
@@ -2078,6 +2078,8 @@ fieldset[disabled] .btn-default.active {
   background-color: #ffffff;
   border-color: #cccccc;
 }
+
+
 
 .btn-primary {
   color: #ffffff;

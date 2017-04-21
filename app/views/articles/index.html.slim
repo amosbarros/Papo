@@ -1,3 +1,5 @@
+- @articles = Article.order(:published => :desc)
+
 h1 Lista de Artigos
 
 table.table.tabls-striped
@@ -9,7 +11,7 @@ table.table.tabls-striped
       th       
 
   tbody
-    - @articles.order(:published => :desc).each do |article|
+    - @articles.each do |article|
       tr
         td = article.title
         td = l article.published, format: :short
@@ -17,8 +19,8 @@ table.table.tabls-striped
         td
           .btn-group.pull-right
             = link_to 'Exibir', article, class: "btn btn-default"
-            = link_to 'Editar', edit_article_path(article), class: "btn btn-default"
-            = link_to 'Excluir', article, data: { confirm: 'Tem certeza?' }, method: :delete, class: "btn btn-default"
+            = link_to 'Editar', edit_article_path(article), class: "btn btn-editar"
+            = link_to 'Excluir', article, data: { confirm: 'Tem certeza?' }, method: :delete, class: "btn btn-excluir"
 
 br
 
