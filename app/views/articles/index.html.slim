@@ -5,7 +5,8 @@ table.table.tabls-striped
     tr
       th Título
       th Publicado
-      th
+      th Categoria
+      th 
       
 
   tbody
@@ -13,6 +14,7 @@ table.table.tabls-striped
       tr
         td = article.title
         td = l article.published, format: :short
+        td = article.category.name
         td
           .btn-group.pull-right
             = link_to 'Exibir', article, class: "btn btn-default"

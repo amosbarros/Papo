@@ -1,4 +1,4 @@
 class Article < ActiveRecord::Base
-  validates :title, presence: true
-  validates :body, presence: true
+  validates :title, :body, :category, presence: true
+  belongs_to :category
 end

@@ -8,6 +8,7 @@
   '
   = link_to 'Voltar', articles_path, class: 'btn btn-default'
 h1  = @article.title
-hr    
+hr 
+strong = @article.category.name
 p = @article.published
 = @article.body
